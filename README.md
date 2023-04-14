@@ -3,7 +3,7 @@ The program is able to extract information from a PDF and exhibit it as the user
 
 <h2>Background</h2>
 
-In the Vertical Farming industry, many varieties of herbs are to be harvested daily from different benches located in different acres. For the sake of organisation, the workers have access to a PDF file which contains all the information needed for the harvest procedure. An example of a single "Harvest Label" is as follows:
+In the Vertical Farming industry, many varieties of herbs are to be harvested daily from different benches located in different acres. For the sake of organisation, the workers have access to a PDF file which contains all the information needed for the harvest procedure. An example of a single "Harvest Label" from a random day is as follows:
 
 <img src="https://user-images.githubusercontent.com/74310745/232113745-359ce038-3f73-4c75-b530-04810eda7451.png" width="600"/>
 
@@ -23,6 +23,10 @@ The user must select a date to load the Harvest labels PDF. After this, the user
 
 Results in:
 
-<img src="https://user-images.githubusercontent.com/74310745/232115924-58afda0d-9cda-446a-a64b-96d34329620d.png" width="400"/>
+<img src="https://user-images.githubusercontent.com/74310745/232117443-5b67e658-faf3-4e9c-9ec0-03140af17204.png" width="400"/>
 
 The general PDF file for this day contained 30 pages. With the program the user was able to quickly extract the two useful pages.
+
+<h2>Behind the code</h2>
+
+The main library in this program is "pdfminer". PDFMiner allows us to generate lists for every page of a PDF file, which later have to be carefully treated in order to extract the correct information the user needs. Tkinter is used for the Graphic User Interface (GUI).
